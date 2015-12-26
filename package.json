@@ -1,0 +1,29 @@
+{
+  "name": "ie8-demo",
+  "version": "1.0.0",
+  "description": "A demo project for using angularjs, angular-ui-router, twitter-bootstrap, angular-ui-bootstrap in ie8.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "liyuan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liyuan-rey/ie8-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/liyuan-rey/ie8-demo/issues"
+  },
+  "homepage": "https://github.com/liyuan-rey/ie8-demo#readme",
+  "dependencies": {
+    "angular": "^1.2.29",
+    "angular-ui-bootstrap": "^0.12.1",
+    "angular-ui-router": "^0.2.10",
+    "bootstrap": "^3.3.6",
+    "html5shiv": "^3.7.3",
+    "jquery": "^1.11.3",
+    "requirejs": "^2.1.22",
+    "respond.js": "^1.4.2"
+  }
+}
