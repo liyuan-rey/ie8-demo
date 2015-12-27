@@ -2,9 +2,10 @@
 
 define([
     'angular',
-    'angular-ui-router'
+    'angular-ui-router',
+    '../typhoon/typhoon.module'
 ], function (ng) {
     'use strict';
 
-    return ng.module('app.map', ['ui.router']);
+    return ng.module('app.map', ['ui.router', 'app.typhoon']);
 });

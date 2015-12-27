@@ -11,12 +11,26 @@ define([
         .controller('MapController', MapController);
 
     MapController.$inject =
-        ['$scope'];
+        ['$scope', '$state'];
 
     ////////////
 
-    function MapController($scope) {
+    function MapController($scope, $state) {
         //$scope.categories = categoryService.getCategoryList();
+        $scope.doTest = function doTest() {
+            $state.current.views.floatView1 = {
+                templateUrl: './app/typhoon/typhoon.tpl.html',
+                controller: 'WeatherController'
+            };
+
+            $state.$current.views['floatView1@'] = {
+                templateUrl: './app/typhoon/typhoon.tpl.html',
+                controller: 'WeatherController'
+            };
+
+            $state.reload();
+        };
+
     }
 
 });

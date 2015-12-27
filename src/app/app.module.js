@@ -11,5 +11,8 @@ define([
     'use strict';
 
     return ng
-        .module('app', ['ui.router', 'app.map', 'app.ships', 'app.typhoon', 'app.weather']);
+        .module('app', ['ui.router', 'app.map', 'app.ships', 'app.typhoon', 'app.weather'])
+        .run(function ($rootScope) {
+            $rootScope.$on("$stateChangeError", console.log.bind(console));
+        });
 });
