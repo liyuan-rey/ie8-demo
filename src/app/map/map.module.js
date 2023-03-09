@@ -7,5 +7,5 @@ define([
 ], function (ng) {
     'use strict';
 
-    return ng.module('app.map', ['ui.router', 'app.typhoon']);
+    return ng.module('app.map', ['ui.router']);
 });

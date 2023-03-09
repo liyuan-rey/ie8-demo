@@ -1,5 +1,10 @@
 // app.routes.js
 
+var g_cfg = {
+    templateUrl: './app/weather/weather.tpl.html',
+    controller: 'WeatherController'
+};
+
 define([
     'angular',
     'angular-ui-router',
@@ -25,10 +30,7 @@ define([
                         templateUrl: './app/map/map.tpl.html',
                         controller: 'MapController'
                     },
-                    'floatView1': {
-                        templateUrl: './app/weather/weather.tpl.html',
-                        controller: 'WeatherController'
-                    },
+                    'floatView1': g_cfg,
                     'floatView2': {
                         templateUrl: './app/ships/ships.tpl.html',
                         controller: 'ShipsController'

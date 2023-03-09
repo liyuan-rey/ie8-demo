@@ -17,6 +17,9 @@ define([
 
     function TyphoonController($scope) {
         //$scope.categories = categoryService.getCategoryList();
+        $scope.good = function good() {
+            window.alert('good');
+        };
     }
 
 });
